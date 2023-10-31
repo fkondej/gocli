@@ -44,6 +44,8 @@ Use `--help` to discover all commands and options. Docs might not be up to date.
 
 ### Random Server Data
 
+[code](cmd/random/serverdata.go)
+
 ```bash
 go run main.go random server-data --json
 ```
@@ -60,6 +62,8 @@ Example result:
 
 ### Get info about ERC20 token from Ethereum
 
+[code](cmd/ethereum/erc20token.go)
+
 ```bash
 go run main.go ethereum erc20-token --address 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
 ```
@@ -74,6 +78,8 @@ Info about token 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
 ```
 
 ### Pull code, binary and generate go bindings of existing Smart Contract
+
+[code](cmd/ethereum/pull.go)
 
 ```bash
 go run main.go ethereum pull
@@ -90,6 +96,8 @@ Example result:
 ```
 
 ### Test of Ethereum Endpoints
+
+[code](cmd/ethereum/testEndpoints.go)
 
 ```bash
 go run main.go ethereum test-endpoints --rpc https://eth-rpc.gateway.pokt.network,https://mainnet.infura.io/v3/57a0d24661374c0ab7136d0ffca35297
